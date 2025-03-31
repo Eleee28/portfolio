@@ -1,0 +1,57 @@
+.site-header {
+	background-color: var(--color-bg);
+	border-bottom: 1px solid var(--color-border);
+	padding: 1rem 0;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.header-inner {
+	display: flex;
+	align-items: center;
+	vertical-align: center;
+	justify-content: space-between;
+	gap: 1rem;
+	flex-wrap: wrap;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.logo a {
+	font-size: 1.25rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--color-text);
+}
+
+.site-nav ul {
+	display: flex;
+	gap: 1.5rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav a {
+	color: var(--color-muted);
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s ease;
+}
+
+.site-nav a:hover {
+	color: var(--color-accent);
+}
+
+@media (max-width: 600px) {
+	.header-inner {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.site-nav ul {
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+}
