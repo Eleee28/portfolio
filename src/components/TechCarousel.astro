@@ -1,0 +1,32 @@
+---
+import { techStack } from "../data/techStack";
+import "../styles/carousel.css"
+---
+
+<section class="tech-carousel">
+	<div class="carousel-viewport">
+		<div class="carousel-track">
+			{techStack.concat(techStack).map((tech) => (
+				<a href={tech.url} target="_blank" rel="noopener noreferrer" title={tech.name}>
+					<img
+						src={tech.src}
+						alt={tech.alt}
+						class="tech-icon"
+						loading="lazy"
+					/>
+				</a>
+			))}
+
+			{techStack.concat(techStack).map((tech) => (
+				<a href={tech.url} target="_blank" rel="noopener noreferrer" title={tech.name}>
+					<img
+						src={tech.src}
+						alt={tech.alt}
+						class="tech-icon"
+						loading="lazy"
+					/>
+				</a>
+			))}
+		</div>
+	</div>
+</section>
