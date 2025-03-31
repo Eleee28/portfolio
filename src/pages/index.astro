@@ -1,11 +1,15 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import "../styles/dev.css"
 ---
 
 <Layout>
-	<Welcome />
+	<section class="dev-message">
+		<h1 class="fade-in">🚧 Website Under Development</h1>
+		<p class="fade-in delay-1">Thanks for stopping by! This portfolio is currently in progress.</p>
+		<p class="fade-in delay-2">
+			In the meantime, feel free to check out my work on
+		<a href="https://github.com/eleee28" target="_blank">GitHub</a>.
+		</p>
+	</section>
 </Layout>

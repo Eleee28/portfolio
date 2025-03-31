@@ -1,0 +1,55 @@
+.dev-message {
+	text-align: center;
+	margin-top: 6rem;
+	padding: 2rem;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dev-message h1 {
+	font-size: 2rem;
+	color: var(--color-accent);
+	margin-bottom: 1rem;
+}
+
+.dev-message p {
+	font-size: 1.125rem;
+	color: var(--color-muted);
+	margin: 0.75rem 0;
+}
+
+.dev-message a {
+	color: var(--color-accent);
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.dev-message a:hover {
+	text-decoration: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fade-in {
+	opacity: 0;
+	animation: fadeIn 0.6s ease-out forwards;
+}
+
+.delay-1 {
+	animation-delay: 0.4s;
+}
+
+.delay-2 {
+	animation-delay: 0.8s;
+}
