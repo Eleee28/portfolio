@@ -20,7 +20,6 @@
 	position: relative;
 	gap: 1rem;
 	flex-wrap: wrap;
-	transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .logo a {
