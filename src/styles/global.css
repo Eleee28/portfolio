@@ -6,6 +6,7 @@
 	--color-muted: #6b7280;
 	--color-accent: #3b82f6;
 	--color-border: #e5e7eb;
+	--color-shadow: rgba(0, 0, 0, 0.192);
 }
 
 :root[data-theme="dark"] {
@@ -15,6 +16,7 @@
 	--color-muted: #9ca3af;
 	--color-accent: #3b82f6;
 	--color-border: #374151;
+	--color-shadow: rgba(160, 158, 158, 0.26);
 }
 
 body, .icon, a, .footer, .card {

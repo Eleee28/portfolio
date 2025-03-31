@@ -1,19 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
+import TechCarousel from '../components/TechCarousel.astro';
+import "../styles/about.css"
 ---
 
 <Layout>
-	<section class="card">
-		<h2>About Me</h2>
-		<p>Hey! i'm a web developer passionate about clean design and performance.</p>
-	</section>
+	<section class="hero">
 
-	<section class="card" style="margin-top: 2rem;">
-		<h2>Projects</h2>
-		<ul>
-			<li>🛠️ Project One – A simple HTML/CSS site</li>
-			<li>⚡ Project Two – JavaScript-powered app</li>
-		</ul>
+		<img src="/images/avatar.svg" alt="Elena Juarros" class="avatar" />
+
+		<h1>Hi, I'm Elena 👋</h1>
+		<h2>A Developer based in Madrid</h2>
+		<p>
+			sknfkdml,dfl,spfmp
+		</p>
+		
+		<div class="cta">
+			<a href="/projects" class="btn">View Projects</a>
+			<a href="/contact" class="btn">Contact Me</a>
+		</div>
+
+		<TechCarousel />
 	</section>
 </Layout>
