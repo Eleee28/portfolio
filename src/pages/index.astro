@@ -1,15 +1,19 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import "../styles/dev.css"
+import Layout from '../layouts/Layout.astro';
+
 ---
 
 <Layout>
-	<section class="dev-message">
-		<h1 class="fade-in">🚧 Website Under Development</h1>
-		<p class="fade-in delay-1">Thanks for stopping by! This portfolio is currently in progress.</p>
-		<p class="fade-in delay-2">
-			In the meantime, feel free to check out my work on
-		<a href="https://github.com/eleee28" target="_blank">GitHub</a>.
-		</p>
+	<section class="card">
+		<h2>About Me</h2>
+		<p>Hey! i'm a web developer passionate about clean design and performance.</p>
+	</section>
+
+	<section class="card" style="margin-top: 2rem;">
+		<h2>Projects</h2>
+		<ul>
+			<li>🛠️ Project One – A simple HTML/CSS site</li>
+			<li>⚡ Project Two – JavaScript-powered app</li>
+		</ul>
 	</section>
 </Layout>
