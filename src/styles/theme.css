@@ -1,15 +1,15 @@
 .theme-toggle-wrapper {
 	display: flex;
 	justify-content: center;
+	background-color: transparent;
 	transition: background-color 0.3s ease, color 0.2s ease;
 }
 
 .theme-toggle {
-	background-color: var(--color-bg);
+	background-color: transparent;
 	border: var(--color-bg);
 	cursor: pointer;
 	padding: 0;
-	transition: background-color 0.3s ease, color 0.2s ease;
 }
 
 .toggle-track {

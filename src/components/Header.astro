@@ -5,16 +5,27 @@ import "../styles/header.css"
 
 <header class="site-header">
 	<div class="container header-inner">
+
+		<button id="hamburger-toggle" class="hamburger" aria-label="Toggle navigation">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
 		<div class="logo">
 			<a href="/">Elena Juarros</a>
 		</div>
-		<nav class="site-nav">
+
+		<nav class="site-nav" id="mobile-nav">
 			<ul>
 				<li><a href="#about">About</a></li>
 				<li><a href="#about">Projects</a></li>
 				<li><a href="#about">Contact</a></li>
 			</ul>
 		</nav>
+
 		<ThemeToggle />
+
 	</div>
+	<script src="/hamburger.js" defer></script>
 </header>

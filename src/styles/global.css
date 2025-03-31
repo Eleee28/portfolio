@@ -1,6 +1,7 @@
 :root {
 	/* Light theme */
 	--color-bg: #ffffff;
+	--color-bg-transparent: rgba(255, 255, 255, 0.3);
 	--color-text: #1a1a1a;
 	--color-muted: #6b7280;
 	--color-accent: #3b82f6;
@@ -9,6 +10,7 @@
 
 :root[data-theme="dark"] {
 	--color-bg: #1a1a1a;
+	--color-bg-transparent: rgba(26, 26, 26, 0.3);
 	--color-text: #f1f5f9;
 	--color-muted: #9ca3af;
 	--color-accent: #3b82f6;
