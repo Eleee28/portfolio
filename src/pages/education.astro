@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import EducationItem from "../components/EducationItem.astro";
+import { educationData } from "../data/education";
+import "../styles/education.css"
+---
+
+<Layout>
+	<section class="education-section">
+		<div class="edu-page-title fade-in">
+			<h1>🎓 Education</h1>
+		</div>
+
+		<p class="edu-intro fade-in delay-1">
+			A quick overview of my academic background and institutions that shaped my journey.
+		</p>
+
+		{educationData.map((entry) => (
+			<EducationItem
+				title={entry.title}
+				institution={entry.institution}
+				location={entry.location}
+				dates={entry.dates}
+				description={entry.description}
+				image={entry.image}
+				url={entry.url}
+			/>
+		))}
+	</section>
+</Layout>

@@ -1,0 +1,100 @@
+.education-section {
+	padding: 0.5rem 1rem;
+}
+
+.edu-page-title {
+	margin-top: 20px;
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	gap: 0.75rem;
+}
+
+.edu-intro {
+	color: var(--color-muted);
+	margin-bottom: 2rem;
+	text-align: center;
+	font-size: 1.1rem;
+}
+
+.edu-card {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 1.5rem;
+	padding: 1.5rem;
+	border: 1px solid var(--color-border);
+	border-radius: 12px;
+	background-color: var(--color-bg);
+	box-shadow: 0 4px 6px var(--color-shadow);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	margin-bottom: 2rem;
+	transition: background-color 0.3s ease, color 0.3s ease, fill 0.3s ease;
+}
+
+.edu-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 16px var(--color-shadow);
+}
+
+.edu-image {
+	width: 64px;
+	height: 64px;
+	object-fit: contain;
+	border-radius: 8px;
+	flex-shrink: 0;
+	transition: transform 0.3s ease;
+}
+
+.edu-image:hover {
+	transform: scale(1.1);
+}
+
+.edu-content {
+	flex: 1;
+}
+
+.edu-title {
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-bottom: 0.25rem;
+	color: var(--color-text);
+}
+
+.edu-link {
+	color: var(--color-muted);
+	text-decoration: none;
+	font-weight: 500;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+.edu-link:hover {
+	color: var(--color-accent);
+	text-decoration: none;
+}
+
+.external-icon {
+	font-size: 0.85em;
+	vertical-align: middle;
+}
+
+.edu-meta {
+	font-size: 0.95rem;
+	color: var(--color-muted);
+	margin-bottom: 0.25rem;
+}
+
+.edu-dates {
+	font-size: 0.85rem;
+	color: var(--color-muted);
+	font-style: italic;
+	margin-bottom: 0.5rem;
+}
+
+.edu-description {
+	font-size: 1rem;
+	color: var(--color-text);
+	text-align: justify;
+}

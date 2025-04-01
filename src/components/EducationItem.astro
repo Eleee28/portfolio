@@ -1,0 +1,40 @@
+---
+import "../styles/education.css"
+
+export interface Props {
+	title: string;
+	institution: string;
+	location: string;
+	dates: string;
+	description: string;
+	image?: string;
+	url?: string;
+}
+const { title, institution, location, dates, description, image, url } = Astro.props;
+---
+
+<article class="edu-card fade-in delay-2">
+	{image && url ? (
+		<a href={url} target="_blank" rel="noopener noreferrer">
+			<img src={image} alt={institution} class="edu-image" loading="lazy" />
+		</a>
+	) : (
+		image && <img src={image} alt={institution} class="edu-image" loading="lazy" />
+	)}
+
+	<div class="edu-content">
+		<h3 class="edu-title">{title}</h3>
+		<p class="edu-meta">
+			{url ? (
+				<a href={url} target="_blank" rel="noopener noreferrer" class="edu-link">
+					{institution}
+					<span class="external-icon" aria-hidden="true">↗</span>
+				</a>
+			) : (
+				{institution}
+			)}
+			&nbsp;- {location}</p>
+		<p class="edu-dates">{dates}</p>
+		<p class="edu-description">{description}</p>
+	</div>
+</article>
