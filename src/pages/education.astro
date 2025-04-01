@@ -15,16 +15,18 @@ import "../styles/education.css"
 			A quick overview of my academic background and institutions that shaped my journey.
 		</p>
 
-		{educationData.map((entry) => (
-			<EducationItem
-				title={entry.title}
-				institution={entry.institution}
-				location={entry.location}
-				dates={entry.dates}
-				description={entry.description}
-				image={entry.image}
-				url={entry.url}
-			/>
-		))}
+		<div class="timeline">
+			{educationData.map((entry) => (
+				<EducationItem
+					title={entry.title}
+					institution={entry.institution}
+					location={entry.location}
+					dates={entry.dates}
+					description={entry.description}
+					image={entry.image}
+					url={entry.url}
+				/>
+			))}
+		</div>
 	</section>
 </Layout>

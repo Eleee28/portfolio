@@ -17,7 +17,15 @@
 	font-size: 1.1rem;
 }
 
+.timeline {
+	position: relative;
+	margin: 2rem 0;
+	padding-left: 2rem;
+	border-left: 2px solid var(--color-border);
+}
+
 .edu-card {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -27,9 +35,22 @@
 	border-radius: 12px;
 	background-color: var(--color-bg);
 	box-shadow: 0 4px 6px var(--color-shadow);
+	margin-bottom: 2.5rem;
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
-	margin-bottom: 2rem;
 	transition: background-color 0.3s ease, color 0.3s ease, fill 0.3s ease;
+}
+
+.edu-card::before {
+	content: "";
+	position: absolute;
+	left: -2.65rem;
+	top: 2rem;
+	width: 12px;
+	height: 12px;
+	background-color: var(--color-accent);
+	border: 2px solid var(--color-border);
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px var(--color-border);
 }
 
 .edu-card:hover {
@@ -96,5 +117,5 @@
 .edu-description {
 	font-size: 1rem;
 	color: var(--color-text);
-	text-align: justify;
+	text-align: left;
 }

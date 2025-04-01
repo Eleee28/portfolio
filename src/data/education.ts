@@ -19,6 +19,15 @@ export const educationData: EducationEntry[] = [
 		url: "https://informatica.ucm.es/",
 	},
 	{
+		title: "Programming School",
+		institution: "42 Madrid Fundación Telefónica",
+		location: "Madrid, Spain",
+		dates: "2023 - Current",
+		description: "Immersive, peer-to-peer programming school with a project-based, self-paced curriculum. Focus on algorithms, C programming, systems and real-world problem solving.",
+		image: "/images/edu/42.svg",
+		url: "https://www.42madrid.com/",
+	},
+	{
 		title: "Exchange Program - Computer Science",
 		institution: "TU Dublin",
 		location: "Dublin, Ireland",
@@ -27,13 +36,4 @@ export const educationData: EducationEntry[] = [
 		image: "/images/edu/tud.svg",
 		url: "https://www.tudublin.ie/",
 	},
-	{
-		title: "Programming School",
-		institution: "42 Madrid Fundación Telefónica",
-		location: "Madrid, Spain",
-		dates: "2023 - Current",
-		description: "Immersive, peer-to-peer programming school with a project-based, self-paced curriculum. Focus on algorithms, C programming, systems and real-world problem solving.",
-		image: "/images/edu/42.svg",
-		url: "https://www.42madrid.com/",
-	}
 ]
