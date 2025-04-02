@@ -2,13 +2,7 @@
 	padding: 0.5rem 1rem;
 }
 
-.edu-page-title {
-	margin-top: 20px;
-	display: flex;
-	align-items: baseline;
-	justify-content: center;
-	gap: 0.75rem;
-}
+
 
 .edu-intro {
 	color: var(--color-muted);
